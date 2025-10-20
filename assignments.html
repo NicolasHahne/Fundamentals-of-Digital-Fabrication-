@@ -31,11 +31,45 @@
 </head>
 <body>
   <header>
-    <h1>About Me</h1>
+    <h1>Assignments</h1>
   </header>
 
   <main>
-
+    <h2>Task 1</h2>
+    <p>Created GitHub and web pages.</p>
+    <h2>Task 2 (WIP)</h2>
+    <p><strong>Current State</strong></p>
+    <p>
+      <a href="https://github.com/NicolasHahne/Fundamentals-of-Digital-Fabrication-/blob/main/task%202/Project%20Concept.f3d">WIP Project Concept</a>
+    </p>
+    <p>Unfortunately, I didn't get to finish this project just yet.<br>
+    I tried out a bunch of design ideas and iterated through them, leaving me with a bunch of ideas that I couldn't finish implementing in time.</p>
+    <p>In the linked file, you can see one of three shelf segments, with a pot to hold the character, a screen to display information, and two books with writing that will serve as buttons to roll for those specific actions.</p>
+    <p><strong>End Goal</strong></p>
+    <p>If I were able to finish it, the shelf would be assembled in the shape of the top half of a hexagon.<br>
+    The character would be placed at the same spot where the pot is now, with a screen above showing the character's name, health, size, weight, and other basic stats.<br>
+    The right side of the center shelf would concern itself with more character information and traits, like movement, racial traits, background features, and proficiencies.<br>
+    The base plate at the front would contain a calculator to add or subtract health points, as well as some other navigational features.<br>
+    Then, in the right shelf, you'd find the “books” I already made for the ability scores and skill rolls, as well as another book with its cover facing the front, containing a screen with the actions like attack, spellcasting, and other common rolls.<br>
+    Above the books, if possible, you'd find 8-balls or a basic screen to display the result of the rolls.<br>
+    The left shelf would be used for the inventory and a display for the armor class on top.<br>
+    On the back of the shelf, there would be another screen to display relevant information to other players (like name, health, and effects).<br>
+    Finally, at the top of the shelf, there would be a flat screen showing the current turn order in combat.
+    </p>
+    <p><strong>How I achieved the current state</strong></p>
+    <p>This will only contain what you can see in the current state, not what I did for the prior iterations.</p>
+    <p>Excuse any incorrect terminology. I am more familiar with Blender and how things are called there.<br>
+      I also have my application in German, so I don't know the proper English terms.</p>
+    <p>I started off by creating a sketch for the base plate and extruding it.<br>
+    Then, I created a sketch representing half the intersection of a pin to hold the base plate in place, rotated it into a mesh, positioned it at a corner of the base plate, and duplicated it with a rectangular displacement, keeping the center spots empty.<br>
+    After that, I created the pot using a similar method and placed it at the back left-hand corner of the base plate.<br>
+    Then I went back and created the rest of the shelf with another sketch that I then extruded twice — first to create the back, then to create the frame. Then I rounded the edges.<br>
+    After that, I created the screen in the shelf by extruding the face into a separate component, insetting the face by 5 millimeters, and pushing the face forward to create the screen.<br>
+    Then, I created the books by creating a cube, beveling the side edges facing toward the front, and insetting (hollowing) the cube by a few millimeters.<br>
+    Next, I created another, slightly smaller cube and placed it inside, creating the book look.<br>
+    Then, using the rectangular duplication tool, I copied the book over.<br>
+    Next, I created a cube, rounded its corners, placed a cylinder with rounded edges inside, and joined them to carve out a bit in the middle, where I placed another cylinder with rounded edges to create a switch.<br>
+    Finally, with another sketch, I created the text seen on the side of the books, which I extruded. These words will function as buttons that roll for that check when pressed.</p>
     <p><a href="index.html">← Back to Home</a></p>
   </main>
 </body>
