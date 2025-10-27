@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,23 +13,32 @@
       margin: 0;
       padding: 0;
     }
+
     header {
       background: #2d3e50;
       color: #fff;
       text-align: center;
       padding: 1.5rem;
     }
+
     main {
       max-width: 800px;
       margin: 2rem auto;
       padding: 1rem;
       line-height: 1.6;
     }
+
     a {
       color: #0077cc;
     }
+
+    img {
+      max-width: 100%;
+      flex: 50%;
+    }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Assignments</h1>
@@ -40,37 +50,232 @@
     <h2>Task 2 (WIP)</h2>
     <p><strong>Current State</strong></p>
     <p>
-      <a href="https://github.com/NicolasHahne/Fundamentals-of-Digital-Fabrication-/blob/main/task%202/Project%20Concept.f3d">WIP Project Concept</a>
+      <a
+        href="https://github.com/NicolasHahne/Fundamentals-of-Digital-Fabrication-/blob/main/task%202/Project%20Concept.f3d">WIP
+        Project Concept</a>
     </p>
     <p>Unfortunately, I didn't get to finish this project just yet.<br>
-    I tried out a bunch of design ideas and iterated through them, leaving me with a bunch of ideas that I couldn't finish implementing in time.</p>
-    <p>In the linked file, you can see one of three shelf segments, with a pot to hold the character, a screen to display information, and two books with writing that will serve as buttons to roll for those specific actions.</p>
+      I tried out a bunch of design ideas and iterated through them, leaving me with a bunch of ideas that I couldn't
+      finish implementing in time.</p>
+    <p>In the linked file, you can see one of three shelf segments, with a pot to hold the character, a screen to
+      display information, and two books with writing that will serve as buttons to roll for those specific actions.</p>
     <p><strong>End Goal</strong></p>
     <p>If I were able to finish it, the shelf would be assembled in the shape of the top half of a hexagon.<br>
-    The character would be placed at the same spot where the pot is now, with a screen above showing the character's name, health, size, weight, and other basic stats.<br>
-    The right side of the center shelf would concern itself with more character information and traits, like movement, racial traits, background features, and proficiencies.<br>
-    The base plate at the front would contain a calculator to add or subtract health points, as well as some other navigational features.<br>
-    Then, in the right shelf, you'd find the “books” I already made for the ability scores and skill rolls, as well as another book with its cover facing the front, containing a screen with the actions like attack, spellcasting, and other common rolls.<br>
-    Above the books, if possible, you'd find 8-balls or a basic screen to display the result of the rolls.<br>
-    The left shelf would be used for the inventory and a display for the armor class on top.<br>
-    On the back of the shelf, there would be another screen to display relevant information to other players (like name, health, and effects).<br>
-    Finally, at the top of the shelf, there would be a flat screen showing the current turn order in combat.
+      The character would be placed at the same spot where the pot is now, with a screen above showing the character's
+      name, health, size, weight, and other basic stats.<br>
+      The right side of the center shelf would concern itself with more character information and traits, like movement,
+      racial traits, background features, and proficiencies.<br>
+      The base plate at the front would contain a calculator to add or subtract health points, as well as some other
+      navigational features.<br>
+      Then, in the right shelf, you'd find the “books” I already made for the ability scores and skill rolls, as well as
+      another book with its cover facing the front, containing a screen with the actions like attack, spellcasting, and
+      other common rolls.<br>
+      Above the books, if possible, you'd find 8-balls or a basic screen to display the result of the rolls.<br>
+      The left shelf would be used for the inventory and a display for the armor class on top.<br>
+      On the back of the shelf, there would be another screen to display relevant information to other players (like
+      name, health, and effects).<br>
+      Finally, at the top of the shelf, there would be a flat screen showing the current turn order in combat.
     </p>
     <p><strong>How I achieved the current state</strong></p>
     <p>This will only contain what you can see in the current state, not what I did for the prior iterations.</p>
     <p>Excuse any incorrect terminology. I am more familiar with Blender and how things are called there.<br>
       I also have my application in German, so I don't know the proper English terms.</p>
     <p>I started off by creating a sketch for the base plate and extruding it.<br>
-    Then, I created a sketch representing half the intersection of a pin to hold the base plate in place, rotated it into a mesh, positioned it at a corner of the base plate, and duplicated it with a rectangular displacement, keeping the center spots empty.<br>
-    After that, I created the pot using a similar method and placed it at the back left-hand corner of the base plate.<br>
-    Then I went back and created the rest of the shelf with another sketch that I then extruded twice — first to create the back, then to create the frame. Then I rounded the edges.<br>
-    After that, I created the screen in the shelf by extruding the face into a separate component, insetting the face by 5 millimeters, and pushing the face forward to create the screen.<br>
-    Then, I created the books by creating a cube, beveling the side edges facing toward the front, and insetting (hollowing) the cube by a few millimeters.<br>
-    Next, I created another, slightly smaller cube and placed it inside, creating the book look.<br>
-    Then, using the rectangular duplication tool, I copied the book over.<br>
-    Next, I created a cube, rounded its corners, placed a cylinder with rounded edges inside, and joined them to carve out a bit in the middle, where I placed another cylinder with rounded edges to create a switch.<br>
-    Finally, with another sketch, I created the text seen on the side of the books, which I extruded. These words will function as buttons that roll for that check when pressed.</p>
+      Then, I created a sketch representing half the intersection of a pin to hold the base plate in place, rotated it
+      into a mesh, positioned it at a corner of the base plate, and duplicated it with a rectangular displacement,
+      keeping the center spots empty.<br>
+      After that, I created the pot using a similar method and placed it at the back left-hand corner of the base
+      plate.<br>
+      Then I went back and created the rest of the shelf with another sketch that I then extruded twice — first to
+      create the back, then to create the frame. Then I rounded the edges.<br>
+      After that, I created the screen in the shelf by extruding the face into a separate component, insetting the face
+      by 5 millimeters, and pushing the face forward to create the screen.<br>
+      Then, I created the books by creating a cube, beveling the side edges facing toward the front, and insetting
+      (hollowing) the cube by a few millimeters.<br>
+      Next, I created another, slightly smaller cube and placed it inside, creating the book look.<br>
+      Then, using the rectangular duplication tool, I copied the book over.<br>
+      Next, I created a cube, rounded its corners, placed a cylinder with rounded edges inside, and joined them to carve
+      out a bit in the middle, where I placed another cylinder with rounded edges to create a switch.<br>
+      Finally, with another sketch, I created the text seen on the side of the books, which I extruded. These words will
+      function as buttons that roll for that check when pressed.</p>
+
+
+    <h2>Task 3 - 3D Printing</h2>
+
+    <p>
+      For this assignment, we had to create and print a model that would be difficult to create with subtractive methods
+      like milling but more easily created with additive methods like 3D printing.
+    </p>
+
+    <h3>Model Idea</h3>
+    <p>
+      For this assignment, I thought that printing a figurine of my current DnD character would be a good idea.
+    </p>
+    <p>
+      Not only because I would have needed to print it at some point anyway, as the character is needed for my final
+      project, but also because I believe a small, detailed figurine would be difficult to create subtractively due to
+      the many details and organic shapes that can also intertwine.
+    </p>
+
+    <h3>Model Creation</h3>
+    <p><img src="task 3/BlenderRender.png"><br>
+      I created my model in Blender.
+    </p>
+
+    <p>
+      First, I started out by creating a primitive shape, either a sphere or a cube, which I then sculpted into the head
+      of my character.<br>
+      I used mirrored sculpting along the X-axis; however, it did not always work perfectly, like for the hollowed-out
+      eyes and eye ridges, and especially the ears.<br>
+      That wasn't really a problem, however, as no organism would ever truly be perfectly symmetrical.
+    </p>
+
+    <p>
+      As I just said, I hollowed out the eye sockets. I filled in the eyes by creating a sphere, moving it into place,
+      and mirroring it.
+    </p>
+
+    <p>
+      Similarly, I created a separate object for the tusks in the form of a cylinder, which I also scaled, moved into
+      place, and mirrored.
+      Then, I disabled all mirroring, as only one of the tusks of my character is still intact.<br>
+      I then sculpted the full tusk into shape.
+    </p>
+
+    <p>
+      Next, I created a cube, added and applied a subdivision surface modifier, and used proportional editing to form it
+      into a leg shape, adding loop cuts around it to give it form.
+    </p>
+
+    <p>
+      I tried sculpting the hoof nails; however, they did not turn out the way I wanted, so I moved on and later created
+      them with small subdivided round cubes, proportionally edited into shape, then duplicated and placed where I
+      wanted them.
+    </p>
+
+    <p>
+      After that, I created a sphere, proportionally editing it into the rough shape of a chubby elephant body
+      (torso).<br>
+      I then sculpted some more details around the chest and back, generally also defining the shape a little more.
+    </p>
+
+    <p>
+      With the head, body, and legs completed, I started giving my character a slightly angled pose, positioning the
+      individual pieces as I saw fit.
+    </p>
+
+    <p>
+      Next, I created my character’s hammer by creating a cube and scaling it to be wider. I then beveled the edges.<br>
+      To create the hilt, I created a cylinder, made it thin and tall, gave it a bunch of loop cuts, and beveled the
+      edges, hiding the lower end within the hammer, eyeballing the center position.
+    </p>
+
+    <p>
+      To estimate the right position, I created more cylinders, gave them loop cuts, and formed them a bit into pose
+      using proportional editing.
+    </p>
+
+    <p>
+      Having positioned everything, I then added the base plate and positioned it so that the character comfortably sat
+      on top of it.
+    </p>
+
+    <p>
+      With all of these elements done, it was time to dress my character, so I created another cylinder, removed its top
+      and bottom, and extruded it inwards.<br>
+      Switching from edit to sculpt mode, I used the pull brush to pull the dress around the body's contour and to add
+      folds in the fabric.
+    </p>
+
+    <p>
+      Next, I created a plane, subdividing it a bunch and adding cloth simulation physics to it.<br>
+      I then added physics collisions to the body, legs, ground, and dress, simulating how the cloth would fall onto the
+      body.
+    </p>
+
+    <p>
+      When I liked the size and look of the robe, I baked the simulation.<br>
+      However, I felt like one layer of robe didn’t cut it, so I added another subdivided cloth physics plane to the
+      scene, and a collider to the original cloth, simulating how it would fall on top of the other one.
+    </p>
+
+    <p>
+      Next, I wanted to add a belt around where the dress and the body meet, so I created a curve, shaped it the way I
+      needed, and converted it to a mesh so I could apply geometry nodes.<br>
+      Using geometry nodes, I hooked it into a mesh-to-curve, resampled the curve to be more detailed, and then linked
+      it into a curve-to-mesh node.<br>
+      There, I set the profile curve to a curve circle and hooked up the radius to a noise texture, mapping its values
+      to the radii I wanted, and increased the scale of the noise to make it look more rope-like.
+    </p>
+
+    <p>
+      To simulate the robe shaping under the belt's pressure, I added physics collisions to it as well and animated it,
+      making it large at the start, slowly scaling down to normal size.<br>
+      That way, the cloth would have time to fall down on the body normally and then be tightened around the hips when
+      the belt moved into it.<br>
+      Therefore, I rebaked the simulations.
+    </p>
+
+    <video width="100%" height="100%" controls>
+      <source src="task 3/Simulation0001-0250.mkv" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <p>
+      To wrap up on the belt, using similar methods, I created another curve, turning it into a knot shape with threads
+      hanging down, following the same curve-to-mesh procedure as before, with the values adjusted.
+    </p>
+
+    <p>
+      Next, for the hand that's wrapped around the hammer’s hilt, I created a sphere, sculpting it into shape.<br>
+      Same for the other hand, but because of its different position, I used a short, long cube as a base instead.
+    </p>
+
+    <p>
+      I then adjusted the shape of the arms to fit better, sculpting them into the wide arms of the robe, with gravity
+      pulling down the sleeves and adding folds.
+    </p>
+
+    <p>
+      Finally, I created a necklace ring using the same curve-to-mesh method and sculpted another cylinder into the
+      broken-off tusk my character now displays around their neck.
+    </p>
+    <p style="text-align: center;"><a href="task 3/LoxodonFigurine.stl">The final models .stl file.</a></p>
+    <p><strong>The Print</strong></p>
+    <p style="display: flex; justify-content: center; align-items: center;"><img
+        src="task 3/DravokarFigurineFront.jpg"><img src="task 3/DravokarFigurineBack.jpg"></p>
+    <p>
+      With my first print complete, I’m quite happy with the overall result. The main features came out nicely, and many
+      fine details are still clearly visible.<br>
+      The sleeve and facial features printed crystal clear, and even smaller elements like the tusks, trunk, and chain
+      around the neck are well-defined.<br>
+      The battle hammer, likely thanks to its simple shapes, also retained its details very well.<br>
+      The legs and hooves are also clearly visible and turned out great.
+    </p>
+
+    <p>
+      Some finer details, however — such as the belt laces, the insides of the ears, the robe tips, and the small
+      ripples
+      in the fabric—didn’t survive the print as well.<br>
+      I realized that my model was simply too small to reproduce those very delicate elements reliably.<br>
+      Many of these features were also unsupported or suspended in midair, which made them more prone to failure during
+      printing.<br>
+      If I had used more of the available baseplate area and scaled the model up by around 1.5× to 2×, those details
+      might have printed more successfully.<br>
+      A slightly larger size would also have reduced the issue of trying to remove thin or fragile parts from the
+      supporting structures.
+    </p>
+
+    <p>Despite these small losses in quality during the print, I don't mind all too much for this figurine, as the
+      torn-up robes and ears actually fit the character represented quite nicely - as an undead being.</p>
+
+    <p>
+      My main takeaway from this print is to scale up future figurines and other small, detailed models to ensure better
+      durability and sharper results. Overall, I’m pleased with this first attempt and look forward to improving further
+      with these insights in mind.
+    </p>
     <p><a href="index.html">← Back to Home</a></p>
   </main>
 </body>
+
 </html>
